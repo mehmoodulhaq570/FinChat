@@ -39,7 +39,6 @@ Before running the app, ensure you have the following:
      ollama status
      ```
      If the server is running, you should see an output indicating that Ollama is active.
-   - **Screenshot Placeholder**:
    
    ![Ollama is running](https://github.com/user-attachments/assets/0909ae2a-c71e-4360-ae1b-52d11a828037)
 
