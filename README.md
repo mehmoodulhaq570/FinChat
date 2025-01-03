@@ -2,6 +2,12 @@
 
 **FinChat** is an interactive chatbot application designed to process and analyze uploaded PDF files of earnings reports. Using a **Retrieval-Augmented Generation (RAG)** approach, the app integrates with **Llama 3.2** for enhanced document processing and user interaction.
 
+## Video Demo:
+
+https://github.com/user-attachments/assets/8222323a-7b98-4258-ad97-2b116c762cce
+
+: The video demonstrates the step-by-step process of uploading the PDF and interacting with the FinChat bot.
+
 ## Key Features:
 - **File Upload Handling**: Users can upload PDF files of earnings reports (max 10 MB). The chatbot will analyze the document and add it to the knowledge database for further use.
 - **Multi-file Upload**: Once a file is uploaded, users are prompted to upload additional files by typing "upload the next file". This allows users to add multiple earnings reports for analysis.
@@ -33,7 +39,10 @@ Before running the app, ensure you have the following:
      ollama status
      ```
      If the server is running, you should see an output indicating that Ollama is active.
-   - **Screenshot Placeholder**: Add a screenshot here showing the Ollama terminal output with the status `running`.
+   - **Screenshot Placeholder**:
+   
+   ![Ollama is running](https://github.com/user-attachments/assets/0909ae2a-c71e-4360-ae1b-52d11a828037)
+
 5. **Install Chainlit**: Install the **Chainlit** library using `pip`:
      ```
      pip install chainlit
@@ -71,8 +80,6 @@ Before running the app, ensure you have the following:
   ```
   ollama status
   ```
-- **Screenshot Placeholder**: ![Ollama is running](https://github.com/user-attachments/assets/803e8bb3-e47b-4cd3-b521-e9977771b669)
-
 6. **Navigate to the App Directory**:
 - Navigate to the project directory `chat-with-financial-reports`:
   ```
@@ -85,13 +92,6 @@ Before running the app, ensure you have the following:
   ```
 8. **Interact with the Chatbot**:
 - Once the app is running, open your browser and interact with the chatbot by uploading your earnings report PDFs and asking questions based on the uploaded data.
-
-## Video Demo:
-- 
-
-https://github.com/user-attachments/assets/8222323a-7b98-4258-ad97-2b116c762cce
-
-: The video demonstrates the step-by-step process of uploading the PDF and interacting with the FinChat bot.
 
 ## Future Improvements:
 - **Support for more file formats**: Extend the application to support other document formats such as Word and Excel.
