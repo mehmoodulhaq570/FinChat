@@ -40,7 +40,7 @@ Before running the app, ensure you have the following:
      ```
      If the server is running, you should see an output indicating that Ollama is active.
    
-  ![Ollama is running](https://github.com/user-attachments/assets/f60d28d3-460a-445e-aad0-b9e46290f243)
+     ![Ollama is running](https://github.com/user-attachments/assets/f60d28d3-460a-445e-aad0-b9e46290f243)
 
 
 5. **Install Chainlit**: Install the **Chainlit** library using `pip`:
