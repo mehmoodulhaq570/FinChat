@@ -31,14 +31,9 @@ async def on_chat_start():
         # Once the upload is complete, notify the user
         await cl.Message(content=f"✅ File '{text_file.name}' successfully uploaded and added to the knowledge database!").send()
 
-        # Display the PDF to the user
-        elements = [
-            cl.Pdf(name="pdf", display="inline", path=text_file.path, page=1)
-        ]
-        await cl.Message(content="Your PDF file:", elements=elements).send()
-
         # Inform the user that they can upload the next file
-        await cl.Message(content="You can upload another file by typing 'upload the next file' when you're ready.").send()
+        await cl.Message(content=f"✅ File '{text_file.name}' successfully uploaded and added to the knowledge database! \n You can upload another file by typing 'upload the next file' when you're ready.").send()
+
 
     else:
         # Handle if no file was uploaded
@@ -68,7 +63,7 @@ async def on_message(message: cl.Message):
             cl.user_session.set("app", app)
 
             # Once the upload is complete, notify the user
-            await cl.Message(content=f"✅ File '{text_file.name}' successfully uploaded and added to the knowledge database! \n You can upload another file by typing 'upload the next file' when you're ready.").send()
+            await cl.Message(content=f"✅ File '{text_file.name}' successfully uploaded and added to the knowledge database!").send()
 
         else:
             await cl.Message(content="❌ No file was uploaded. Please try again.").send()
