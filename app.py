@@ -22,14 +22,12 @@ async def on_chat_start():
         text_file = files[0]
 
         # Notify the user about the upload status
-        progress_msg = await cl.Message(content=f"⏳ Uploading {text_file.name}... Please wait.").send()
+        await cl.Message(content=f"⏳ Uploading {text_file.name}... Please wait.").send()
 
         # Add the file to the app's knowledge database
         app.add(text_file.path, data_type='pdf_file')
         cl.user_session.set("app", app)
 
-        # Once the upload is complete, notify the user
-        await cl.Message(content=f"✅ File '{text_file.name}' successfully uploaded and added to the knowledge database!").send()
 
         # Inform the user that they can upload the next file
         await cl.Message(content=f"✅ File '{text_file.name}' successfully uploaded and added to the knowledge database! \n You can upload another file by typing 'upload the next file' when you're ready.").send()
